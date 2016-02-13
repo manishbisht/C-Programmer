@@ -1,0 +1,968 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.developermanish.cprogrammer" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.startapp.android.publish.list3d.List3DActivity"
+            android:theme="@android:style/Theme" />
+        <activity
+            android:name="com.startapp.android.publish.OverlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.startapp.android.publish.FullScreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme" />
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".Feedback"
+            android:label="@string/title_activity_feedback" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.MainActivity" />
+        </activity>
+        <activity
+            android:name=".About"
+            android:label="@string/title_activity_about" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.MainActivity" />
+        </activity>
+        <activity
+            android:name=".GettingStarted"
+            android:label="@string/title_activity_getting_started" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.MainActivity" />
+        </activity>
+        <activity
+            android:name=".hello01"
+            android:label="@string/title_activity_hello01" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.GettingStarted" />
+        </activity>
+        <activity
+            android:name=".hello02"
+            android:label="@string/title_activity_hello02" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.GettingStarted" />
+        </activity>
+        <activity
+            android:name=".hello03"
+            android:label="@string/title_activity_hello03" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.GettingStarted" />
+        </activity>
+        <activity
+            android:name=".hello04"
+            android:label="@string/title_activity_hello04" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.GettingStarted" />
+        </activity>
+        <activity
+            android:name=".hello05"
+            android:label="@string/title_activity_hello05" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.GettingStarted" />
+        </activity>
+        <activity
+            android:name=".hello06"
+            android:label="@string/title_activity_hello06" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.GettingStarted" />
+        </activity>
+        <activity
+            android:name=".hello07"
+            android:label="@string/title_activity_hello07" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.GettingStarted" />
+        </activity>
+        <activity
+            android:name=".hello08"
+            android:label="@string/title_activity_hello08" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.GettingStarted" />
+        </activity>
+        <activity
+            android:name=".hello10"
+            android:label="@string/title_activity_hello10" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.GettingStarted" />
+        </activity>
+        <activity
+            android:name=".hello09"
+            android:label="@string/title_activity_hello09" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.GettingStarted" />
+        </activity>
+        <activity
+            android:name=".hello11"
+            android:label="@string/title_activity_hello11" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.GettingStarted" />
+        </activity>
+        <activity
+            android:name=".hello12"
+            android:label="@string/title_activity_hello12" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.GettingStarted" />
+        </activity>
+        <activity
+            android:name=".hello13"
+            android:label="@string/title_activity_hello13" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.GettingStarted" />
+        </activity>
+        <activity
+            android:name=".hello14"
+            android:label="@string/title_activity_hello14" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.GettingStarted" />
+        </activity>
+        <activity
+            android:name=".hello15"
+            android:label="@string/title_activity_hello15" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.GettingStarted" />
+        </activity>
+        <activity
+            android:name=".hello16"
+            android:label="@string/title_activity_hello16" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.GettingStarted" />
+        </activity>
+        <activity
+            android:name=".hello17"
+            android:label="@string/title_activity_hello17" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.GettingStarted" />
+        </activity>
+        <activity
+            android:name=".Branching"
+            android:label="@string/title_activity_branching" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.MainActivity" />
+        </activity>
+        <activity
+            android:name=".branching01"
+            android:label="@string/title_activity_branching01" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Branching" />
+        </activity>
+        <activity
+            android:name=".branching02"
+            android:label="@string/title_activity_branching02" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Branching" />
+        </activity>
+        <activity
+            android:name=".branching03"
+            android:label="@string/title_activity_branching03" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Branching" />
+        </activity>
+        <activity
+            android:name=".branching04"
+            android:label="@string/title_activity_branching04" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Branching" />
+        </activity>
+        <activity
+            android:name=".branching05"
+            android:label="@string/title_activity_branching05" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Branching" />
+        </activity>
+        <activity
+            android:name=".branching06"
+            android:label="@string/title_activity_branching06" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Branching" />
+        </activity>
+        <activity
+            android:name=".branching07"
+            android:label="@string/title_activity_branching07" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Branching" />
+        </activity>
+        <activity
+            android:name=".branching08"
+            android:label="@string/title_activity_branching08" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Branching" />
+        </activity>
+        <activity
+            android:name=".branching09"
+            android:label="@string/title_activity_branching09" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Branching" />
+        </activity>
+        <activity
+            android:name=".branching10"
+            android:label="@string/title_activity_branching10" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Branching" />
+        </activity>
+        <activity
+            android:name=".branching11"
+            android:label="@string/title_activity_branching11" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Branching" />
+        </activity>
+        <activity
+            android:name=".branching12"
+            android:label="@string/title_activity_branching12" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Branching" />
+        </activity>
+        <activity
+            android:name=".branching13"
+            android:label="@string/title_activity_branching13" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Branching" />
+        </activity>
+        <activity
+            android:name=".branching14"
+            android:label="@string/title_activity_branching14" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Branching" />
+        </activity>
+        <activity
+            android:name=".branching15"
+            android:label="@string/title_activity_branching15" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Branching" />
+        </activity>
+        <activity
+            android:name=".branching16"
+            android:label="@string/title_activity_branching16" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Branching" />
+        </activity>
+        <activity
+            android:name=".branching17"
+            android:label="@string/title_activity_branching17" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Branching" />
+        </activity>
+        <activity
+            android:name=".branching18"
+            android:label="@string/title_activity_branching18" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Branching" />
+        </activity>
+        <activity
+            android:name=".Loop"
+            android:label="  Decision Making/Looping" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.MainActivity" />
+        </activity>
+        <activity
+            android:name=".loop01"
+            android:label="@string/title_activity_loop01" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Loop" />
+        </activity>
+        <activity
+            android:name=".loop02"
+            android:label="@string/title_activity_loop02" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Loop" />
+        </activity>
+        <activity
+            android:name=".loop03"
+            android:label="@string/title_activity_loop03" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Loop" />
+        </activity>
+        <activity
+            android:name=".loop04"
+            android:label="@string/title_activity_loop04" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Loop" />
+        </activity>
+        <activity
+            android:name=".loop05"
+            android:label="@string/title_activity_loop05" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Loop" />
+        </activity>
+        <activity
+            android:name=".loop06"
+            android:label="@string/title_activity_loop06" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Loop" />
+        </activity>
+        <activity
+            android:name=".loop07"
+            android:label="@string/title_activity_loop07" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Loop" />
+        </activity>
+        <activity
+            android:name=".loop08"
+            android:label="@string/title_activity_loop08" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Loop" />
+        </activity>
+        <activity
+            android:name=".loop09"
+            android:label="@string/title_activity_loop09" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Loop" />
+        </activity>
+        <activity
+            android:name=".loop10"
+            android:label="@string/title_activity_loop10" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Loop" />
+        </activity>
+        <activity
+            android:name=".loop11"
+            android:label="@string/title_activity_loop11" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Loop" />
+        </activity>
+        <activity
+            android:name=".loop12"
+            android:label="@string/title_activity_loop12" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Loop" />
+        </activity>
+        <activity
+            android:name=".loop13"
+            android:label="@string/title_activity_loop13" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Loop" />
+        </activity>
+        <activity
+            android:name=".loop14"
+            android:label="@string/title_activity_loop14" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Loop" />
+        </activity>
+        <activity
+            android:name=".loop15"
+            android:label="@string/title_activity_loop15" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Loop" />
+        </activity>
+        <activity
+            android:name=".loop16"
+            android:label="@string/title_activity_loop16" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Loop" />
+        </activity>
+        <activity
+            android:name=".loop17"
+            android:label="@string/title_activity_loop17" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Loop" />
+        </activity>
+        <activity
+            android:name=".loop18"
+            android:label="@string/title_activity_loop18" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Loop" />
+        </activity>
+        <activity
+            android:name=".loop19"
+            android:label="@string/title_activity_loop19" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Loop" />
+        </activity>
+        <activity
+            android:name=".loop20"
+            android:label="@string/title_activity_loop20" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Loop" />
+        </activity>
+        <activity
+            android:name=".loop21"
+            android:label="@string/title_activity_loop21" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Loop" />
+        </activity>
+        <activity
+            android:name=".loop22"
+            android:label="@string/title_activity_loop22" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Loop" />
+        </activity>
+        <activity
+            android:name=".loop23"
+            android:label="@string/title_activity_loop23" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Loop" />
+        </activity>
+        <activity
+            android:name=".loop24"
+            android:label="@string/title_activity_loop24" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Loop" />
+        </activity>
+        <activity
+            android:name=".loop25"
+            android:label="@string/title_activity_loop25" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Loop" />
+        </activity>
+        <activity
+            android:name=".Array"
+            android:label="  Array" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Array01"
+            android:label="@string/title_activity_array01" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Array" />
+        </activity>
+        <activity
+            android:name=".Array02"
+            android:label="@string/title_activity_array02" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Array" />
+        </activity>
+        <activity
+            android:name=".Array03"
+            android:label="@string/title_activity_array03" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Array" />
+        </activity>
+        <activity
+            android:name=".Array04"
+            android:label="@string/title_activity_array04" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Array" />
+        </activity>
+        <activity
+            android:name=".Array05"
+            android:label="@string/title_activity_array05" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Array" />
+        </activity>
+        <activity
+            android:name=".Array06"
+            android:label="@string/title_activity_array06" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Array" />
+        </activity>
+        <activity
+            android:name=".Array07"
+            android:label="@string/title_activity_array07" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Array" />
+        </activity>
+        <activity
+            android:name=".Array08"
+            android:label="@string/title_activity_array08" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Array" />
+        </activity>
+        <activity
+            android:name=".Array09"
+            android:label="@string/title_activity_array09" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Array" />
+        </activity>
+        <activity
+            android:name=".Array10"
+            android:label="@string/title_activity_array10" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Array" />
+        </activity>
+        <activity
+            android:name=".Array11"
+            android:label="@string/title_activity_array11" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Array" />
+        </activity>
+        <activity
+            android:name=".Array12"
+            android:label="@string/title_activity_array12" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Array" />
+        </activity>
+        <activity
+            android:name=".Array13"
+            android:label="@string/title_activity_array13" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Array" />
+        </activity>
+        <activity
+            android:name=".Array14"
+            android:label="@string/title_activity_array14" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Array" />
+        </activity>
+        <activity
+            android:name=".Array15"
+            android:label="@string/title_activity_array15" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Array" />
+        </activity>
+        <activity
+            android:name=".file"
+            android:label="@string/title_activity_file" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.MainActivity" />
+        </activity>
+        <activity
+            android:name=".file01"
+            android:label="@string/title_activity_file01" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.file" />
+        </activity>
+        <activity
+            android:name=".file02"
+            android:label="@string/title_activity_file02" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.file" />
+        </activity>
+        <activity
+            android:name=".file03"
+            android:label="@string/title_activity_file03" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.file" />
+        </activity>
+        <activity
+            android:name=".file04"
+            android:label="@string/title_activity_file04" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.file" />
+        </activity>
+        <activity
+            android:name=".file05"
+            android:label="@string/title_activity_file05" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.file" />
+        </activity>
+        <activity
+            android:name=".file06"
+            android:label="@string/title_activity_file06" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.file" />
+        </activity>
+        <activity
+            android:name=".Functions"
+            android:label="@string/title_activity_functions" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.MainActivity" />
+        </activity>
+        <activity
+            android:name=".functions01"
+            android:label="@string/title_activity_functions01" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Functions" />
+        </activity>
+        <activity
+            android:name=".functions02"
+            android:label="@string/title_activity_functions02" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Functions" />
+        </activity>
+        <activity
+            android:name=".functions03"
+            android:label="@string/title_activity_functions03" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Functions" />
+        </activity>
+        <activity
+            android:name=".functions04"
+            android:label="@string/title_activity_functions04" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Functions" />
+        </activity>
+        <activity
+            android:name=".functions05"
+            android:label="@string/title_activity_functions05" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Functions" />
+        </activity>
+        <activity
+            android:name=".Pointers"
+            android:label="@string/title_activity_pointers" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.MainActivity" />
+        </activity>
+        <activity
+            android:name=".pointers01"
+            android:label="@string/title_activity_pointers01" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Pointers" />
+        </activity>
+        <activity
+            android:name=".pointers02"
+            android:label="@string/title_activity_pointers02" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Pointers" />
+        </activity>
+        <activity
+            android:name=".pointers03"
+            android:label="@string/title_activity_pointers03" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Pointers" />
+        </activity>
+        <activity
+            android:name=".pointers04"
+            android:label="@string/title_activity_pointers04" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Pointers" />
+        </activity>
+        <activity
+            android:name=".pointers05"
+            android:label="@string/title_activity_pointers05" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Pointers" />
+        </activity>
+        <activity
+            android:name=".pointers06"
+            android:label="@string/title_activity_pointers06" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Pointers" />
+        </activity>
+        <activity
+            android:name=".pointers07"
+            android:label="@string/title_activity_pointers07" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Pointers" />
+        </activity>
+        <activity
+            android:name=".pointers08"
+            android:label="@string/title_activity_pointers08" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Pointers" />
+        </activity>
+        <activity
+            android:name=".pointers09"
+            android:label="@string/title_activity_pointers09" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Pointers" />
+        </activity>
+        <activity
+            android:name=".pointers10"
+            android:label="@string/title_activity_pointers10" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Pointers" />
+        </activity>
+        <activity
+            android:name=".pointers11"
+            android:label="@string/title_activity_pointers11" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Pointers" />
+        </activity>
+        <activity
+            android:name=".pointers12"
+            android:label="@string/title_activity_pointers12" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Pointers" />
+        </activity>
+        <activity
+            android:name=".Structure"
+            android:label="@string/title_activity_structure" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.MainActivity" />
+        </activity>
+        <activity
+            android:name=".structure01"
+            android:label="@string/title_activity_structure01" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Structure" />
+        </activity>
+        <activity
+            android:name=".structure02"
+            android:label="@string/title_activity_structure02" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Structure" />
+        </activity>
+        <activity
+            android:name=".structure03"
+            android:label="@string/title_activity_structure03" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Structure" />
+        </activity>
+        <activity
+            android:name=".structure04"
+            android:label="@string/title_activity_structure04" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Structure" />
+        </activity>
+        <activity
+            android:name=".structure05"
+            android:label="@string/title_activity_structure05" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Structure" />
+        </activity>
+        <activity
+            android:name=".structure06"
+            android:label="@string/title_activity_structure06" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Structure" />
+        </activity>
+        <activity
+            android:name=".structure07"
+            android:label="@string/title_activity_structure07" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Structure" />
+        </activity>
+        <activity
+            android:name=".structure08"
+            android:label="@string/title_activity_structure08" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Structure" />
+        </activity>
+        <activity
+            android:name=".Strings"
+            android:label="@string/title_activity_strings" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.MainActivity" />
+        </activity>
+        <activity
+            android:name=".strings01"
+            android:label="@string/title_activity_strings01" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Strings" />
+        </activity>
+        <activity
+            android:name=".strings02"
+            android:label="@string/title_activity_strings02" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Strings" />
+        </activity>
+        <activity
+            android:name=".strings03"
+            android:label="@string/title_activity_strings03" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Strings" />
+        </activity>
+        <activity
+            android:name=".strings04"
+            android:label="@string/title_activity_strings04" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Strings" />
+        </activity>
+        <activity
+            android:name=".strings05"
+            android:label="@string/title_activity_strings05" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Strings" />
+        </activity>
+        <activity
+            android:name=".strings06"
+            android:label="@string/title_activity_strings06" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Strings" />
+        </activity>
+        <activity
+            android:name=".strings07"
+            android:label="@string/title_activity_strings07" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Strings" />
+        </activity>
+        <activity
+            android:name=".strings08"
+            android:label="@string/title_activity_strings08" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Strings" />
+        </activity>
+        <activity
+            android:name=".strings09"
+            android:label="@string/title_activity_strings09" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Strings" />
+        </activity>
+        <activity
+            android:name=".strings10"
+            android:label="@string/title_activity_strings10" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.Strings" />
+        </activity>
+        <activity
+            android:name=".preprocessor"
+            android:label="@string/title_activity_preprocesser" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.MainActivity" />
+        </activity>
+        <activity
+            android:name=".preprocessor01"
+            android:label="@string/title_activity_preprocessor01" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.preprocessor" />
+        </activity>
+        <activity
+            android:name=".preprocessor02"
+            android:label="@string/title_activity_preprocessor02" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.preprocessor" />
+        </activity>
+        <activity
+            android:name=".preprocessor03"
+            android:label="@string/title_activity_preprocessor03" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.preprocessor" />
+        </activity>
+        <activity
+            android:name=".preprocessor04"
+            android:label="@string/title_activity_preprocessor04" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developermanish.cprogrammer.preprocessor" />
+        </activity>
+    </application>
+
+</manifest>
